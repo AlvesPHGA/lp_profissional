@@ -1,0 +1,29 @@
+// @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;700&family=Poppins:wght@400;500&family=Rubik&display=swap');
+
+// font-family: 'Comfortaa', cursive; -> 500 / 700
+// font-family: 'Poppins', sans-serif; -> 400 / 500
+// font-family: 'Rubik', sans-serif; -> 400
+
+@mixin comfortaa($color, $font-size, $font-weight) {
+   font-family: 'Comfortaa', cursive;
+   line-height: normal;
+   color: $color;
+   font-size: $font-size;
+   font-weight: $font-weight;
+}
+
+@mixin poppins {
+   font-family: 'Poppins', sans-serif;
+   color: $color;
+   line-height: $line-height;
+   font-size: $font-size;
+   font-weight: $font-weight;
+}
+
+@mixin rubik($color, $font-size) {
+   font-family: 'Rubik', sans-serif;
+   font-weight: 400;
+   line-height: normal;
+   color: $color;
+   font-size: $font-size;
+}
