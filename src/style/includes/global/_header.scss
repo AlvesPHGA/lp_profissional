@@ -1,0 +1,36 @@
+.header {
+   .__width-1200 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .img-header {
+         svg {
+            width: 18.75rem;
+         }
+      }
+
+      .menu {
+         display: flex;
+         align-items: center;
+
+         .link-nav {
+            a {
+               @include comfortaa(
+                  $color: $color_link_icon_nav,
+                  $font-size: 1.5rem,
+                  $font-weight: 400
+               );
+               text-transform: uppercase;
+               margin-right: 1.25rem;
+            }
+         }
+
+         .social-media {
+            display: flex;
+            gap: 1.25rem;
+            margin-left: 1.25rem;
+         }
+      }
+   }
+}
