@@ -3,3 +3,13 @@
    position: relative;
    margin: 0 auto;
 }
+
+.border-detail {
+   background: $color_link_icon_nav;
+   height: 0.0625rem;
+   width: 45rem;
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   transform: translateX(-50%);
+}
