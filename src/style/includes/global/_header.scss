@@ -1,4 +1,8 @@
 .header {
+   padding: 1.25rem 0;
+   background: transparent;
+   border-bottom: 2px solid $color_link_icon_nav;
+
    .__width-1200 {
       display: flex;
       justify-content: space-between;
