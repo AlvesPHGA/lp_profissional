@@ -5,7 +5,7 @@ module.exports = {
    mode: 'development',
 
    entry: {
-      'index': './src/views/pages/index.pug', // => dist/index.html
+      index: './src/views/pages/index.pug', // => dist/index.html
    },
 
    output: {
@@ -37,9 +37,9 @@ module.exports = {
       compress: true,
       // enable HMR live reload
       watchFiles: {
-         paths: ['src/**/*.*'], 
+         paths: ['src/**/*.*'],
          options: {
-           usePolling: true,
+            usePolling: true,
          },
       },
    },
@@ -49,8 +49,8 @@ module.exports = {
       new PugPlugin({
          pretty: true, // formatting HTML, should be used in development mode only
          extractCss: {
-         // output filename of CSS files
-         filename: 'assets/css/[name].[contenthash:8].css'
+            // output filename of CSS files
+            filename: 'assets/css/[name].[contenthash:8].css',
          },
       }),
    ],
@@ -78,10 +78,7 @@ module.exports = {
          // css
          {
             test: /\.scss$/i,
-            use: [
-               'css-loader',
-               'sass-loader',
-            ],
+            use: ['css-loader', 'sass-loader'],
          },
 
          // medias
