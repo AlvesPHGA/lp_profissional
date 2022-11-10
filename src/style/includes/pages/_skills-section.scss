@@ -1,3 +1,33 @@
 .skills-section {
    position: relative;
+
+   .back-section {
+      position: absolute;
+      top: 0;
+      height: 17.5rem;
+      background: $color_title_sec;
+      width: 100%;
+   }
+
+   .__width-1200 {
+      padding-top: 2.5rem;
+   }
+
+   .title {
+      @include rubik($color: $color_title_prim, $fontSize: 3.5rem);
+      text-align: center;
+      position: relative;
+   }
+   .box-title {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+      justify-content: center;
+   }
+
+   .detail {
+      background: url('../../../images/jpg/details01-desktop.png') no-repeat;
+      height: 1rem;
+      width: 168px;
+   }
 }
