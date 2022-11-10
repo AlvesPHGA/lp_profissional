@@ -1,5 +1,7 @@
 .skills-section {
    position: relative;
+   padding: 2.5rem 0 5rem;
+   border-bottom: 0.0625rem solid $color_others_sec;
 
    .back-section {
       position: absolute;
@@ -9,25 +11,36 @@
       width: 100%;
    }
 
-   .__width-1200 {
-      padding-top: 2.5rem;
-   }
-
-   .title {
-      @include rubik($color: $color_title_prim, $fontSize: 3.5rem);
-      text-align: center;
-      position: relative;
-   }
    .box-title {
       display: flex;
       align-items: center;
       gap: 2.5rem;
       justify-content: center;
+
+      .title {
+         @include rubik($color: $color_title_prim, $fontSize: 3.5rem);
+         text-align: center;
+         position: relative;
+      }
+
+      .detail {
+         background: url('../../../images/jpg/details01-desktop.png') no-repeat;
+         height: 1rem;
+         width: 168px;
+      }
    }
 
-   .detail {
-      background: url('../../../images/jpg/details01-desktop.png') no-repeat;
-      height: 1rem;
-      width: 168px;
+   .box-skills {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      margin-top: 2.5rem;
+
+      .card {
+         width: calc((1200px / 4) - 20px);
+         border: 1px solid red;
+         height: 17.5rem;
+         border-radius: 0.3125rem;
+      }
    }
 }
