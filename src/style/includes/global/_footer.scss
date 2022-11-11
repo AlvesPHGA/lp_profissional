@@ -1,0 +1,23 @@
+.footer {
+   background: $color_title_sec;
+   padding: 5rem 0;
+   text-align: center;
+
+   .img-footer {
+      width: fit-content;
+      margin: 0 auto;
+      svg {
+         width: 18.75rem;
+      }
+   }
+
+   span {
+      @include poppins(
+         $color: $color_text_third,
+         $lineHeight: normal,
+         $fontSize: 1.5rem,
+         $fontWeight: 400
+      );
+      text-align: center;
+   }
+}
