@@ -1,0 +1,62 @@
+.work-section {
+   padding: 5rem 0;
+
+   .box-title {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+      justify-content: center;
+
+      .title {
+         @include rubik($color: $color_title_sec, $fontSize: 3.75rem);
+         text-align: center;
+         position: relative;
+      }
+
+      .detail {
+         background: url('../../../images/jpg/details02-desktop.png') no-repeat;
+         height: 1rem;
+         width: 168px;
+      }
+   }
+
+   .box-works {
+      margin-top: 2.5rem;
+      display: flex;
+      justify-content: center;
+
+      .work {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 2.5rem;
+         margin-top: 0.75rem;
+
+         .card {
+            width: 12.5rem;
+            height: 12.5rem;
+            border-radius: 0.3125rem;
+            border: 0.0625rem solid $color_title_sec;
+         }
+
+         .text-content {
+            text-align: center;
+            width: 30rem;
+
+            @include poppins(
+               $color: $color_text_sec,
+               $lineHeight: 1.875rem,
+               $fontSize: 1.125rem,
+               $fontWeight: 500
+            );
+         }
+      }
+
+      .line {
+         height: 27.5rem;
+         width: 0.0625rem;
+         background: $color_others_sec;
+         margin: 0 1.75rem;
+      }
+   }
+}
