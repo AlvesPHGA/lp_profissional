@@ -20,4 +20,30 @@
          width: 168px;
       }
    }
+
+   .contacts {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+      margin-top: 2.5rem;
+
+      .contact {
+         width: fit-content;
+         display: flex;
+         align-items: center;
+         gap: 1.25rem;
+         justify-content: center;
+
+         span {
+            @include comfortaa(
+               $color: $color_others_prim,
+               $font-size: 3.25rem,
+               $font-weight: normal
+            );
+
+            height: fit-content;
+         }
+      }
+   }
 }
