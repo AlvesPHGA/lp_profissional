@@ -6,7 +6,7 @@
    .back-section {
       position: absolute;
       top: 0;
-      height: 17.5rem;
+      height: 15rem;
       background: $color_title_sec;
       width: 100%;
    }
@@ -33,14 +33,41 @@
    .box-skills {
       display: flex;
       flex-flow: row nowrap;
-      justify-content: space-between;
+      justify-content: center;
+      gap: 1.25rem;
       margin-top: 2.5rem;
 
       .card {
-         width: calc((1200px / 4) - 20px);
-         border: 1px solid red;
-         height: 17.5rem;
+         width: 160px;
+         height: 160px;
          border-radius: 0.3125rem;
+         border: 0.0625rem solid $color_title_sec;
+
+         &:nth-child(1) {
+            background: url('../../../images/webp/pug.webp') no-repeat center;
+            background-size: cover;
+         }
+
+         &:nth-child(2) {
+            background: url('../../../images/webp/sass.webp') no-repeat center;
+            background-size: 100% 100%;
+         }
+
+         &:nth-child(3) {
+            background: url('../../../images/webp/javascript.webp') no-repeat
+               center;
+            background-size: 100% 100%;
+         }
+
+         &:nth-child(4) {
+            background: url('../../../images/webp/stylus.webp') no-repeat center;
+            background-size: cover;
+         }
+
+         &:nth-child(5) {
+            background: url('../../../images/webp/figma.webp') no-repeat center;
+            background-size: cover;
+         }
       }
    }
 }
