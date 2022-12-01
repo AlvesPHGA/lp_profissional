@@ -37,6 +37,14 @@
             height: 12.5rem;
             border-radius: 0.3125rem;
             border: 0.0625rem solid $color_title_sec;
+            display: flex;
+            align-items: center;
+            padding: 0 1.25rem;
+            background: rgba($color: $color_title_sec, $alpha: 0.05);
+
+            img {
+               width: 100%;
+            }
          }
 
          .text-content {
