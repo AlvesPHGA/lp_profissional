@@ -29,6 +29,26 @@
                );
                text-transform: uppercase;
                margin-right: 1.25rem;
+               position: relative;
+
+               &::before {
+                  content: '';
+                  position: absolute;
+                  left: 0;
+                  width: 100%;
+                  top: 1.625rem;
+                  border-bottom: 0.5rem dotted $color_hover_prim;
+                  opacity: 0;
+                  transition: all 0.5s ease;
+               }
+
+               &:hover {
+                  color: $color_hover_prim;
+
+                  &::before {
+                     opacity: 1;
+                  }
+               }
             }
          }
 
