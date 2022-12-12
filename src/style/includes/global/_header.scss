@@ -5,6 +5,18 @@
    position: relative;
    z-index: 1;
 
+   @include mobile_s {
+      height: 120px;
+   }
+
+   @include mobile_m {
+      height: 120px;
+   }
+
+   @include mobile_l {
+      height: 120px;
+   }
+
    .__width-1200 {
       display: flex;
       justify-content: space-between;

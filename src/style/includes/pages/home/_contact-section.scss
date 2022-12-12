@@ -37,14 +37,37 @@
          justify-content: center;
          transition: all 0.5s ease;
 
+         @include mobile_s {
+            flex-direction: column;
+         }
+
+         @include mobile_m {
+            flex-direction: column;
+         }
+
+         @include mobile_l {
+            flex-direction: column;
+         }
+
          span {
             @include comfortaa(
                $color: $color_others_prim,
                $font-size: 3.25rem,
                $font-weight: normal
             );
-
             height: fit-content;
+
+            @include mobile_s {
+               font-size: 1.5rem;
+            }
+
+            @include mobile_m {
+               font-size: 1.5rem;
+            }
+
+            @include mobile_l {
+               font-size: 1.5rem;
+            }
          }
 
          &:hover {

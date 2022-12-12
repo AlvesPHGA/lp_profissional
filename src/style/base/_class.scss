@@ -2,6 +2,21 @@
    width: 1200px;
    position: relative;
    margin: 0 auto;
+
+   @include mobile_s {
+      width: 100%;
+      padding: 0 0.9375rem;
+   }
+
+   @include mobile_m {
+      width: 100%;
+      padding: 0 0.9375rem;
+   }
+
+   @include mobile_l {
+      width: 100%;
+      padding: 0 0.9375rem;
+   }
 }
 
 .border-detail {
@@ -12,4 +27,16 @@
    bottom: 0;
    left: 50%;
    transform: translateX(-50%);
+
+   @include mobile_s {
+      width: 100%;
+   }
+
+   @include mobile_m {
+      width: 100%;
+   }
+
+   @include mobile_l {
+      width: 100%;
+   }
 }
