@@ -3,12 +3,36 @@
    padding: 2.5rem 0 5rem;
    border-bottom: 0.0625rem solid $color_others_sec;
 
+   @include mobile_s {
+      padding: 2rem 0;
+   }
+
+   @include mobile_m {
+      padding: 2rem 0;
+   }
+
+   @include mobile_l {
+      padding: 2rem 0;
+   }
+
    .back-section {
       position: absolute;
       top: 0;
       height: 15rem;
       background: $color_title_sec;
       width: 100%;
+
+      @include mobile_s {
+         height: 12.5rem;
+      }
+
+      @include mobile_m {
+         height: 12.5rem;
+      }
+
+      @include mobile_l {
+         height: 12.5rem;
+      }
    }
 
    .box-title {
@@ -21,12 +45,39 @@
          @include rubik($color: $color_title_prim, $fontSize: 3.5rem);
          text-align: center;
          position: relative;
+
+         @include mobile_s {
+            font-size: 2rem;
+            margin-bottom: 0;
+         }
+
+         @include mobile_m {
+            font-size: 2rem;
+            margin-bottom: 0;
+         }
+
+         @include mobile_l {
+            font-size: 2rem;
+            margin-bottom: 0;
+         }
       }
 
       .detail {
          background: url('../../../images/jpg/details01-desktop.png') no-repeat;
          height: 1rem;
          width: 168px;
+
+         @include mobile_s {
+            display: none;
+         }
+
+         @include mobile_m {
+            display: none;
+         }
+
+         @include mobile_l {
+            display: none;
+         }
       }
    }
 
@@ -36,6 +87,25 @@
       justify-content: center;
       gap: 1.25rem;
       margin-top: 2.5rem;
+
+      @include mobile_s {
+         margin-top: 1.25rem;
+         width: 300%;
+         gap: 1rem;
+         overflow-y: hidden;
+      }
+
+      @include mobile_m {
+         margin-top: 1.25rem;
+         width: 100%;
+         gap: 1rem;
+      }
+
+      @include mobile_l {
+         margin-top: 1.25rem;
+         width: 100%;
+         gap: 1rem;
+      }
 
       .card {
          width: 160px;
@@ -68,6 +138,19 @@
          &:nth-child(5) {
             background: url('../../../images/webp/figma.webp') no-repeat center;
             background-size: cover;
+         }
+
+         @include mobile_s {
+            width: calc(320px / 2);
+            // flex-shrink: 0;
+         }
+
+         @include mobile_m {
+            width: calc(320px / 2);
+         }
+
+         @include mobile_l {
+            width: calc(320px / 2);
          }
       }
    }

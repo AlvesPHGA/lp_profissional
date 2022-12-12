@@ -1,6 +1,18 @@
 .work-section {
    padding: 5rem 0;
 
+   @include mobile_s {
+      padding: 2rem 0;
+   }
+
+   @include mobile_m {
+      padding: 2rem 0;
+   }
+
+   @include mobile_l {
+      padding: 2rem 0;
+   }
+
    .box-title {
       display: flex;
       align-items: center;
@@ -11,12 +23,36 @@
          @include rubik($color: $color_title_sec, $fontSize: 3.75rem);
          text-align: center;
          position: relative;
+
+         @include mobile_s {
+            font-size: 2.75rem;
+         }
+
+         @include mobile_m {
+            font-size: 2.75rem;
+         }
+
+         @include mobile_l {
+            font-size: 2.75rem;
+         }
       }
 
       .detail {
          background: url('../../../images/jpg/details02-desktop.png') no-repeat;
          height: 1rem;
          width: 168px;
+
+         @include mobile_s {
+            display: none;
+         }
+
+         @include mobile_m {
+            display: none;
+         }
+
+         @include mobile_l {
+            display: none;
+         }
       }
    }
 
@@ -28,16 +64,19 @@
       @include mobile_s {
          flex-direction: column;
          align-items: center;
+         margin-top: 1.25rem;
       }
 
       @include mobile_m {
          flex-direction: column;
          align-items: center;
+         margin-top: 1.25rem;
       }
 
       @include mobile_l {
          flex-direction: column;
          align-items: center;
+         margin-top: 1.25rem;
       }
 
       .work {
