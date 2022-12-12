@@ -8,15 +8,19 @@
    padding-bottom: 5rem;
 
    @include mobile_s {
-      margin-top: -120px;
+      margin-top: -7.5rem;
+      padding-bottom: 1.5rem;
+      height: 27.75rem;
    }
 
    @include mobile_m {
-      margin-top: -120px;
+      margin-top: -7.5rem;
+      padding-bottom: 1.5rem;
    }
 
    @include mobile_l {
-      margin-top: -120px;
+      margin-top: -7.5rem;
+      padding-bottom: 1.5rem;
    }
 
    .__width-1200 {
@@ -44,6 +48,21 @@
 
       .title {
          @include rubik($color: $color_title_prim, $fontSize: 3.75rem);
+
+         @include mobile_s {
+            font-size: 2rem;
+            margin-bottom: 1.25rem;
+         }
+
+         @include mobile_m {
+            font-size: 2rem;
+            margin-bottom: 1.75rem;
+         }
+
+         @include mobile_l {
+            font-size: 2rem;
+            margin-bottom: 1.75rem;
+         }
       }
 
       .text-content {
@@ -58,19 +77,36 @@
 
          @include mobile_s {
             width: 100%;
+            text-align: center;
+            font-size: 0.75rem;
+            line-height: 1.125rem;
          }
 
          @include mobile_m {
             width: 100%;
+            text-align: center;
          }
 
          @include mobile_l {
             width: 100%;
+            text-align: center;
          }
 
          .dtl {
             font-size: 2rem;
             color: $color_title_prim;
+
+            @include mobile_s {
+               font-size: 1.5rem;
+            }
+
+            @include mobile_m {
+               font-size: 1.5rem;
+            }
+
+            @include mobile_l {
+               font-size: 1.5rem;
+            }
          }
       }
    }
