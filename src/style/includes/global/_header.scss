@@ -20,6 +20,18 @@
          display: flex;
          align-items: center;
 
+         @include mobile_s {
+            display: none;
+         }
+
+         @include mobile_m {
+            display: none;
+         }
+
+         @include mobile_l {
+            display: none;
+         }
+
          .link-nav {
             a {
                @include comfortaa(
