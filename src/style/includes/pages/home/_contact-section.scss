@@ -3,6 +3,18 @@
    background: $color_title_sec;
    position: relative;
 
+   @include mobile_s {
+      padding: 2rem 0;
+   }
+
+   @include mobile_m {
+      padding: 2rem 0;
+   }
+
+   @include mobile_l {
+      padding: 2rem 0;
+   }
+
    .box-title {
       display: flex;
       align-items: center;
@@ -13,12 +25,36 @@
          @include rubik($color: $color_title_prim, $fontSize: 3.5rem);
          text-align: center;
          position: relative;
+
+         @include mobile_s {
+            font-size: 2.5rem;
+         }
+
+         @include mobile_m {
+            font-size: 2.5rem;
+         }
+
+         @include mobile_l {
+            font-size: 2.5rem;
+         }
       }
 
       .detail {
          background: url('../../../images/jpg/details01-desktop.png') no-repeat;
          height: 1rem;
          width: 168px;
+
+         @include mobile_s {
+            display: none;
+         }
+
+         @include mobile_m {
+            display: none;
+         }
+
+         @include mobile_l {
+            display: none;
+         }
       }
    }
 
@@ -49,6 +85,20 @@
             flex-direction: column;
          }
 
+         svg {
+            @include mobile_s {
+               width: 40px;
+            }
+
+            @include mobile_m {
+               padding: 2rem 0;
+            }
+
+            @include mobile_l {
+               padding: 2rem 0;
+            }
+         }
+
          span {
             @include comfortaa(
                $color: $color_others_prim,
@@ -59,6 +109,7 @@
 
             @include mobile_s {
                font-size: 1.5rem;
+               word-break: break-all;
             }
 
             @include mobile_m {
