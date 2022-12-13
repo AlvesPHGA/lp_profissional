@@ -21,6 +21,7 @@
       height: 15rem;
       background: $color_title_sec;
       width: 100%;
+      z-index: -1;
 
       @include mobile_s {
          height: 12.5rem;
@@ -82,29 +83,37 @@
    }
 
    .box-skills {
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: center;
-      gap: 1.25rem;
       margin-top: 2.5rem;
+
+      .skills {
+         width: 100%;
+         display: flex;
+         flex-flow: row nowrap;
+         justify-content: center;
+         gap: 1.25rem;
+
+         @include mobile_s {
+            width: 300%;
+            gap: 1rem;
+         }
+      }
 
       @include mobile_s {
          margin-top: 1.25rem;
-         width: 300%;
-         gap: 1rem;
-         overflow-y: hidden;
+         overflow: auto;
+         padding: 0 15px;
       }
 
       @include mobile_m {
          margin-top: 1.25rem;
-         width: 100%;
-         gap: 1rem;
+         overflow: auto;
+         padding: 0 15px;
       }
 
       @include mobile_l {
          margin-top: 1.25rem;
-         width: 100%;
-         gap: 1rem;
+         overflow: auto;
+         padding: 0 15px;
       }
 
       .card {
