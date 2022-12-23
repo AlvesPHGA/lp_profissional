@@ -1,8 +1,4 @@
-// import _ from 'lodash';
-import printMe from './modules/print.js';
+import AnimaScroll from './modules/anima-scroll.js';
 
-console.log('>> Hello Pug!');
-
-const element = document.querySelector('button');
-
-element.addEventListener('click', printMe);
+const animaScroll = new AnimaScroll('[data-scroll=title]');
+animaScroll.init();
