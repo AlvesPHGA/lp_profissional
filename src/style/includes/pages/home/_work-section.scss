@@ -35,6 +35,10 @@
          @include mobile_l {
             font-size: 2.75rem;
          }
+
+         &.anima-title {
+            color: red;
+         }
       }
 
       .detail {

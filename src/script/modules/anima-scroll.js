@@ -11,10 +11,13 @@ export default class AnimaScroll {
       this.elements.forEach((element) => {
          let dtSet = element.dataset;
          let el = element.getBoundingClientRect().y;
-         let windowTop = window.innerHeight * 0.85;
+         let windowTop = window.innerHeight;
 
-         if (dtSet.scroll === 'title' && el < windowTop)
-            element.classList.add('__active-anima');
+         if (dtSet.scroll === 'title' && el < windowTop * 0.85)
+            element.classList.add('anima-title');
+
+         if (dtSet.scroll === 'card' && el < windowTop * 0.9)
+            element.classList.add('anima-card');
       });
    }
 
