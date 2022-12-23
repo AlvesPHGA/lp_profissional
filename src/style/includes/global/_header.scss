@@ -131,24 +131,39 @@
             flex-direction: column;
             width: 100vw;
             background: $color_title_sec;
-            position: absolute;
-            top: 60px;
+            position: fixed;
+            top: 0;
             left: 0;
+            height: 100vh;
 
             .link-nav {
                display: flex;
                align-items: center;
                flex-direction: column;
                gap: 1.25rem;
-               padding: 2rem;
+               padding: 5rem 2rem 2rem;
 
                a {
                   margin: 0;
                }
             }
 
-            @include mobile_s {
-               height: calc(100vh - 80px);
+            .social-media {
+               margin: 0;
+
+               .social {
+                  transition: all 0.5s ease;
+
+                  &:hover {
+                     transform: scale(1);
+
+                     svg {
+                        path {
+                           fill: $color_hover_prim;
+                        }
+                     }
+                  }
+               }
             }
          }
       }

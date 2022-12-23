@@ -43,11 +43,12 @@
          border-radius: 0.25rem;
       }
 
-      &.__active-menu {
+      &.__open-menu {
          transform: rotate(45deg);
-         position: absolute;
-         top: 50%;
+         position: fixed;
          background: $color_hover_prim;
+         z-index: 50;
+         width: 50px;
 
          &::before {
             background: transparent;
