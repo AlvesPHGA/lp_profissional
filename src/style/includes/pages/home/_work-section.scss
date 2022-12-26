@@ -23,6 +23,7 @@
          @include rubik($color: $color_title_sec, $fontSize: 3.75rem);
          text-align: center;
          position: relative;
+         opacity: 0.7;
 
          @include mobile_s {
             font-size: 2rem;
@@ -37,7 +38,7 @@
          }
 
          &.anima-title {
-            color: red;
+            opacity: 1;
          }
       }
 
