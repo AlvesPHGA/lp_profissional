@@ -83,6 +83,9 @@
       justify-content: center;
       gap: 1.25rem;
 
+      padding: 0.75rem 0;
+      overflow: hidden;
+
       @include mobile_s {
          flex-wrap: wrap;
       }
@@ -102,6 +105,10 @@
          border: 0.0625rem solid $color_others_prim;
          cursor: pointer;
          transition: all 0.4s ease;
+
+         position: relative;
+         left: 200%;
+         opacity: 0;
 
          @include mobile_s {
             width: 80%;
@@ -128,6 +135,21 @@
                   rgba($color: $color_hover_prim, $alpha: 0.4),
                0.25rem 0.25rem 0.75rem 0.125rem
                   rgba($color: $color_hover_prim, $alpha: 0.4);
+         }
+
+         &.anima-card {
+            animation: showCard 0.3s forwards;
+         }
+
+         @keyframes showCard {
+            from {
+               opacity: 0;
+               left: 200%;
+            }
+            to {
+               opacity: 1;
+               left: 0;
+            }
          }
       }
    }
