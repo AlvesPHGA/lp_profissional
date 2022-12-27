@@ -5,7 +5,19 @@ export default class SmoothScroll {
 
    clickEvent(element) {
       element.preventDefault();
-      console.log(element.currentTarget);
+
+      const sections = document.querySelectorAll('section');
+      const dtSmooth = element.currentTarget.dataset.smooth;
+
+      sections.forEach((sec) => {
+         const id = sec.id;
+
+         if (dtSmooth === id)
+            sec.scrollIntoView({
+               block: 'center',
+               behavior: 'smooth',
+            });
+      });
    }
 
    elementsToSmooth() {
