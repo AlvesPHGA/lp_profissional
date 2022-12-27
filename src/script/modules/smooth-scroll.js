@@ -26,7 +26,12 @@ export default class SmoothScroll {
       );
    }
 
+   eventBind() {
+      this.clickEvent = this.clickEvent.bind(this);
+   }
+
    init() {
+      this.eventBind();
       this.elementsToSmooth();
       return this;
    }
