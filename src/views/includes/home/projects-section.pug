@@ -6,8 +6,19 @@ section#projects.projects-section
          h3.sub-title(data-scroll='title') Front end
 
          .box-card
-            .card(data-scroll='card' data-modal='motorRace'): img(src="./assets/images/webp/motorRace.webp", alt="")
-            .card(data-scroll='card' data-modal='todo'): img(src="./assets/images/webp/todo.webp", alt="")
+            .card(data-scroll='card')
+               .card__img: img(src="./assets/images/webp/motorRace.webp", alt="")
+               .card__links
+                  a(href="https://github.com/AlvesPHGA/motorRace", target="_blank") GitHub
+                  a(href="https://motor-race.vercel.app/", target="_blank") Link Projeto
+
+            .card__detail
+
+            .card(data-scroll='card')
+               .card__img: img(src="./assets/images/webp/todo.webp", alt="")
+               .card__links
+                  a(href="https://github.com/AlvesPHGA/app_todo", target="_blank") GitHub
+                  a(href="https://app-todo-ebon.vercel.app/", target="_blank") Link Projeto
 
          .border-detail
 
@@ -15,6 +26,17 @@ section#projects.projects-section
          h3.sub-title(data-scroll='title') UI Design
 
          .box-card
-            .card(data-scroll='card' data-modal='ciaPhotoUI'): img(src="./assets/images/webp/layoutCiaPhotography.webp", alt="")
-            .card(data-scroll='card' data-modal='mtRaceUI'): img(src="./assets/images/webp/layoutMotorRace.webp", alt="")
-            .card(data-scroll='card' data-modal='portUI'): img(src="./assets/images/webp/layoutPortfolio.webp", alt="")
+            .card(data-scroll='card')
+               .card__img: img(src="./assets/images/webp/layoutCiaPhotography.webp", alt="")
+               .card__links
+                  a(href="https://www.figma.com/community/file/1109469419158989381", target="_blank") Link Figma
+               
+            .card(data-scroll='card')
+               .card__img: img(src="./assets/images/webp/layoutMotorRace.webp", alt="")
+               .card__links
+                  a(href="https://www.figma.com/community/file/1129117355225362681", target="_blank") Link Figma
+
+            .card(data-scroll='card')
+               .card__img: img(src="./assets/images/webp/layoutPortfolio.webp", alt="")
+               .card__links
+                  a(href="https://www.figma.com/community/file/1167430365373386084", target="_blank") Link Figma
