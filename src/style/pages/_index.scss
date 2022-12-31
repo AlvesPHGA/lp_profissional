@@ -1,7 +1,14 @@
 @import '../includes/global/header';
 @import '../includes/components/menu-hamburger';
+
+// subheader section
 @import '../includes/pages/home/subheader';
+
+// skill section
 @import '../includes/pages/home/skills-section';
+@import '../includes/components/skill__card';
+@import '../includes/components/skill__back';
+
 @import '../includes/pages/home/work-section';
 @import '../includes/pages/home/projects-section';
 @import '../includes/pages/home/contact-section';
