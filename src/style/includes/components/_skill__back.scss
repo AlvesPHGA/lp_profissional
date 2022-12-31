@@ -1,0 +1,20 @@
+.skills__back {
+   position: absolute;
+   top: 0;
+   height: 15rem;
+   background: var(--color-dark_gunmetal);
+   width: 100%;
+   z-index: -1;
+
+   @include mobile_s {
+      height: 12.5rem;
+   }
+
+   @include mobile_m {
+      height: 12.5rem;
+   }
+
+   @include mobile_l {
+      height: 12.5rem;
+   }
+}
