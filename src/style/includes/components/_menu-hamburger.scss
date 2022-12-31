@@ -1,4 +1,4 @@
-.menu-hamburger {
+.menu__hamburger {
    width: 3rem;
    height: 1.25rem;
    position: relative;
@@ -43,7 +43,7 @@
          border-radius: 0.25rem;
       }
 
-      &.__open-menu {
+      &.is--active__menu {
          transform: rotate(45deg);
          position: fixed;
          background: var(--color-sinopia);
