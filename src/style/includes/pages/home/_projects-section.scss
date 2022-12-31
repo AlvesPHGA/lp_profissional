@@ -1,184 +1,184 @@
-.projects-section {
-   background: url('../../../images/jpg/back-proj-desktop.jpg') center no-repeat;
-   background-size: cover;
-   border-bottom: solid 0.0625rem $color_title_prim;
-   padding: 5rem 0;
+// .projects-section {
+//    background: url('../../../images/jpg/back-proj-desktop.jpg') center no-repeat;
+//    background-size: cover;
+//    border-bottom: solid 0.0625rem $color_title_prim;
+//    padding: 5rem 0;
 
-   @include mobile_s {
-      padding: 2rem 0;
-   }
+//    @include mobile_s {
+//       padding: 2rem 0;
+//    }
 
-   @include mobile_m {
-      padding: 2rem 0;
-   }
+//    @include mobile_m {
+//       padding: 2rem 0;
+//    }
 
-   @include mobile_l {
-      padding: 2rem 0;
-   }
+//    @include mobile_l {
+//       padding: 2rem 0;
+//    }
 
-   .title {
-      @include rubik($color: $color_title_prim, $fontSize: 3.75rem);
-      text-align: center;
-      margin-bottom: 2.5rem;
-      opacity: 0.7;
+//    .title {
+//       @include rubik($color: $color_title_prim, $fontSize: 3.75rem);
+//       text-align: center;
+//       margin-bottom: 2.5rem;
+//       opacity: 0.7;
 
-      @include mobile_s {
-         font-size: 2.5rem;
-         margin-bottom: 1.5rem;
-      }
+//       @include mobile_s {
+//          font-size: 2.5rem;
+//          margin-bottom: 1.5rem;
+//       }
 
-      @include mobile_m {
-         font-size: 2.5rem;
-         margin-bottom: 1.5rem;
-      }
+//       @include mobile_m {
+//          font-size: 2.5rem;
+//          margin-bottom: 1.5rem;
+//       }
 
-      @include mobile_l {
-         font-size: 2.5rem;
-         margin-bottom: 1.5rem;
-      }
+//       @include mobile_l {
+//          font-size: 2.5rem;
+//          margin-bottom: 1.5rem;
+//       }
 
-      &.anima-title {
-         opacity: 1;
-      }
-   }
+//       &.anima-title {
+//          opacity: 1;
+//       }
+//    }
 
-   .sub-title {
-      @include rubik($color: $color_others_prim, $fontSize: 2.5rem);
-      text-align: center;
-      margin-bottom: 1.25rem;
-      opacity: 0.7;
+//    .sub-title {
+//       @include rubik($color: $color_others_prim, $fontSize: 2.5rem);
+//       text-align: center;
+//       margin-bottom: 1.25rem;
+//       opacity: 0.7;
 
-      @include mobile_s {
-         font-size: 1.75rem;
-         margin-bottom: 1rem;
-      }
+//       @include mobile_s {
+//          font-size: 1.75rem;
+//          margin-bottom: 1rem;
+//       }
 
-      @include mobile_m {
-         font-size: 1.75rem;
-         margin-bottom: 1rem;
-      }
+//       @include mobile_m {
+//          font-size: 1.75rem;
+//          margin-bottom: 1rem;
+//       }
 
-      @include mobile_l {
-         font-size: 1.75rem;
-         margin-bottom: 1rem;
-      }
+//       @include mobile_l {
+//          font-size: 1.75rem;
+//          margin-bottom: 1rem;
+//       }
 
-      &.anima-title {
-         opacity: 1;
-      }
-   }
+//       &.anima-title {
+//          opacity: 1;
+//       }
+//    }
 
-   .box-front-end {
-      position: relative;
-      padding-bottom: 2rem;
-   }
+//    .box-front-end {
+//       position: relative;
+//       padding-bottom: 2rem;
+//    }
 
-   .box-ui-design {
-      margin-top: 1.25rem;
+//    .box-ui-design {
+//       margin-top: 1.25rem;
 
-      .box-card .card .card__links {
-         justify-content: center;
-      }
-   }
+//       .box-card .card .card__links {
+//          justify-content: center;
+//       }
+//    }
 
-   .box-card {
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: center;
-      gap: 1.25rem;
+//    .box-card {
+//       display: flex;
+//       flex-flow: row nowrap;
+//       justify-content: center;
+//       gap: 1.25rem;
 
-      padding: 0.75rem 0;
-      overflow: hidden;
+//       padding: 0.75rem 0;
+//       overflow: hidden;
 
-      @include mobile_s {
-         flex-wrap: wrap;
-      }
+//       @include mobile_s {
+//          flex-wrap: wrap;
+//       }
 
-      @include mobile_m {
-         flex-wrap: wrap;
-      }
+//       @include mobile_m {
+//          flex-wrap: wrap;
+//       }
 
-      @include mobile_l {
-         flex-wrap: wrap;
-      }
+//       @include mobile_l {
+//          flex-wrap: wrap;
+//       }
 
-      .card__detail {
-         width: 0.0625rem;
-         height: 13.5rem;
-         background: $color_link_icon_nav;
-         opacity: 0.18;
-      }
+//       .card__detail {
+//          width: 0.0625rem;
+//          height: 13.5rem;
+//          background: $color_link_icon_nav;
+//          opacity: 0.18;
+//       }
 
-      .card {
-         height: fit-content;
-         width: 15rem;
-         position: relative;
-         left: 200%;
-         opacity: 0;
+//       .card {
+//          height: fit-content;
+//          width: 15rem;
+//          position: relative;
+//          left: 200%;
+//          opacity: 0;
 
-         .card__img {
-            height: 12.5rem;
-            width: 100%;
-            border-radius: 0.3125rem;
-            border: 0.0625rem solid $color_others_prim;
+//          .card__img {
+//             height: 12.5rem;
+//             width: 100%;
+//             border-radius: 0.3125rem;
+//             border: 0.0625rem solid $color_others_prim;
 
-            @include mobile_s {
-               width: 80%;
-            }
+//             @include mobile_s {
+//                width: 80%;
+//             }
 
-            @include mobile_m {
-               width: calc(100% / 2);
-            }
+//             @include mobile_m {
+//                width: calc(100% / 2);
+//             }
 
-            @include mobile_l {
-               width: calc(100% / 2);
-            }
+//             @include mobile_l {
+//                width: calc(100% / 2);
+//             }
 
-            img {
-               object-fit: cover;
-               width: 100%;
-               height: 100%;
-               border-radius: 0.3125rem;
-            }
-         }
+//             img {
+//                object-fit: cover;
+//                width: 100%;
+//                height: 100%;
+//                border-radius: 0.3125rem;
+//             }
+//          }
 
-         .card__links {
-            width: 100%;
-            padding: 0.5rem 0.25rem;
-            display: flex;
-            justify-content: space-between;
-            text-transform: uppercase;
+//          .card__links {
+//             width: 100%;
+//             padding: 0.5rem 0.25rem;
+//             display: flex;
+//             justify-content: space-between;
+//             text-transform: uppercase;
 
-            a {
-               @include comfortaa(
-                  $color: $color_others_prim,
-                  $font-size: 1rem,
-                  $font-weight: 400
-               );
+//             a {
+//                @include comfortaa(
+//                   $color: $color_others_prim,
+//                   $font-size: 1rem,
+//                   $font-weight: 400
+//                );
 
-               letter-spacing: 0.0625rem;
-               transition: color 0.7s ease;
+//                letter-spacing: 0.0625rem;
+//                transition: color 0.7s ease;
 
-               &:hover {
-                  color: $color_hover_prim;
-               }
-            }
-         }
+//                &:hover {
+//                   color: $color_hover_prim;
+//                }
+//             }
+//          }
 
-         &.anima-card {
-            animation: showCard 0.3s forwards;
-         }
+//          &.anima-card {
+//             animation: showCard 0.3s forwards;
+//          }
 
-         @keyframes showCard {
-            from {
-               opacity: 0;
-               left: 200%;
-            }
-            to {
-               opacity: 1;
-               left: 0;
-            }
-         }
-      }
-   }
-}
+//          @keyframes showCard {
+//             from {
+//                opacity: 0;
+//                left: 200%;
+//             }
+//             to {
+//                opacity: 1;
+//                left: 0;
+//             }
+//          }
+//       }
+//    }
+// }

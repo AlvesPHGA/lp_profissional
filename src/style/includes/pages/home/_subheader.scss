@@ -1,115 +1,115 @@
-.subheader {
-   background: url('../../../images/jpg/back-topo-desktop.jpg') center no-repeat;
-   height: 30.375rem;
-   background-size: cover;
-   margin-top: -132px;
-   position: relative;
-   display: flex;
-   padding-bottom: 5rem;
+// .subheader {
+//    background: url('../../../images/jpg/back-topo-desktop.jpg') center no-repeat;
+//    height: 30.375rem;
+//    background-size: cover;
+//    margin-top: -132px;
+//    position: relative;
+//    display: flex;
+//    padding-bottom: 5rem;
 
-   @include mobile_s {
-      margin-top: -7.5rem;
-      padding-bottom: 1.5rem;
-      height: 27.75rem;
-      background: url('../../../images/jpg/background-topo-mobile.jpg') center
-         no-repeat;
-   }
+//    @include mobile_s {
+//       margin-top: -7.5rem;
+//       padding-bottom: 1.5rem;
+//       height: 27.75rem;
+//       background: url('../../../images/jpg/background-topo-mobile.jpg') center
+//          no-repeat;
+//    }
 
-   @include mobile_m {
-      margin-top: -7.5rem;
-      padding-bottom: 1.5rem;
-   }
+//    @include mobile_m {
+//       margin-top: -7.5rem;
+//       padding-bottom: 1.5rem;
+//    }
 
-   @include mobile_l {
-      margin-top: -7.5rem;
-      padding-bottom: 1.5rem;
-   }
+//    @include mobile_l {
+//       margin-top: -7.5rem;
+//       padding-bottom: 1.5rem;
+//    }
 
-   .__width-1200 {
-      display: flex;
-      align-items: flex-end;
-   }
+//    .__width-1200 {
+//       display: flex;
+//       align-items: flex-end;
+//    }
 
-   .description {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      width: 100%;
+//    .description {
+//       display: flex;
+//       align-items: center;
+//       justify-content: space-around;
+//       width: 100%;
 
-      @include mobile_s {
-         flex-direction: column;
-      }
+//       @include mobile_s {
+//          flex-direction: column;
+//       }
 
-      @include mobile_m {
-         flex-direction: column;
-      }
+//       @include mobile_m {
+//          flex-direction: column;
+//       }
 
-      @include mobile_l {
-         flex-direction: column;
-      }
+//       @include mobile_l {
+//          flex-direction: column;
+//       }
 
-      .title {
-         @include rubik($color: $color_title_prim, $fontSize: 3.75rem);
+//       .title {
+//          @include rubik($color: $color_title_prim, $fontSize: 3.75rem);
 
-         @include mobile_s {
-            font-size: 2rem;
-            margin-bottom: 1.25rem;
-         }
+//          @include mobile_s {
+//             font-size: 2rem;
+//             margin-bottom: 1.25rem;
+//          }
 
-         @include mobile_m {
-            font-size: 2rem;
-            margin-bottom: 1.75rem;
-         }
+//          @include mobile_m {
+//             font-size: 2rem;
+//             margin-bottom: 1.75rem;
+//          }
 
-         @include mobile_l {
-            font-size: 2rem;
-            margin-bottom: 1.75rem;
-         }
-      }
+//          @include mobile_l {
+//             font-size: 2rem;
+//             margin-bottom: 1.75rem;
+//          }
+//       }
 
-      .text-content {
-         @include poppins(
-            $color: #fff,
-            $lineHeight: 1.5rem,
-            $fontSize: 1rem,
-            $fontWeight: 400
-         );
+//       .text-content {
+//          @include poppins(
+//             $color: #fff,
+//             $lineHeight: 1.5rem,
+//             $fontSize: 1rem,
+//             $fontWeight: 400
+//          );
 
-         width: 34rem;
+//          width: 34rem;
 
-         @include mobile_s {
-            width: 100%;
-            text-align: center;
-            font-size: 0.75rem;
-            line-height: 1.125rem;
-         }
+//          @include mobile_s {
+//             width: 100%;
+//             text-align: center;
+//             font-size: 0.75rem;
+//             line-height: 1.125rem;
+//          }
 
-         @include mobile_m {
-            width: 100%;
-            text-align: center;
-         }
+//          @include mobile_m {
+//             width: 100%;
+//             text-align: center;
+//          }
 
-         @include mobile_l {
-            width: 100%;
-            text-align: center;
-         }
+//          @include mobile_l {
+//             width: 100%;
+//             text-align: center;
+//          }
 
-         .dtl {
-            font-size: 2rem;
-            color: $color_title_prim;
+//          .dtl {
+//             font-size: 2rem;
+//             color: $color_title_prim;
 
-            @include mobile_s {
-               font-size: 1.5rem;
-            }
+//             @include mobile_s {
+//                font-size: 1.5rem;
+//             }
 
-            @include mobile_m {
-               font-size: 1.5rem;
-            }
+//             @include mobile_m {
+//                font-size: 1.5rem;
+//             }
 
-            @include mobile_l {
-               font-size: 1.5rem;
-            }
-         }
-      }
-   }
-}
+//             @include mobile_l {
+//                font-size: 1.5rem;
+//             }
+//          }
+//       }
+//    }
+// }

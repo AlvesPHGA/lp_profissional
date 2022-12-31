@@ -1,166 +1,166 @@
-.skills-section {
-   position: relative;
-   padding: 2.5rem 0 5rem;
-   border-bottom: 0.0625rem solid $color_others_sec;
+// .skills-section {
+//    position: relative;
+//    padding: 2.5rem 0 5rem;
+//    border-bottom: 0.0625rem solid $color_others_sec;
 
-   @include mobile_s {
-      padding: 2rem 0;
-   }
+//    @include mobile_s {
+//       padding: 2rem 0;
+//    }
 
-   @include mobile_m {
-      padding: 2rem 0;
-   }
+//    @include mobile_m {
+//       padding: 2rem 0;
+//    }
 
-   @include mobile_l {
-      padding: 2rem 0;
-   }
+//    @include mobile_l {
+//       padding: 2rem 0;
+//    }
 
-   .back-section {
-      position: absolute;
-      top: 0;
-      height: 15rem;
-      background: $color_title_sec;
-      width: 100%;
-      z-index: -1;
+//    .back-section {
+//       position: absolute;
+//       top: 0;
+//       height: 15rem;
+//       background: $color_title_sec;
+//       width: 100%;
+//       z-index: -1;
 
-      @include mobile_s {
-         height: 12.5rem;
-      }
+//       @include mobile_s {
+//          height: 12.5rem;
+//       }
 
-      @include mobile_m {
-         height: 12.5rem;
-      }
+//       @include mobile_m {
+//          height: 12.5rem;
+//       }
 
-      @include mobile_l {
-         height: 12.5rem;
-      }
-   }
+//       @include mobile_l {
+//          height: 12.5rem;
+//       }
+//    }
 
-   .box-title {
-      display: flex;
-      align-items: center;
-      gap: 2.5rem;
-      justify-content: center;
+//    .box-title {
+//       display: flex;
+//       align-items: center;
+//       gap: 2.5rem;
+//       justify-content: center;
 
-      .title {
-         @include rubik($color: $color_title_prim, $fontSize: 3.5rem);
-         text-align: center;
-         position: relative;
+//       .title {
+//          @include rubik($color: $color_title_prim, $fontSize: 3.5rem);
+//          text-align: center;
+//          position: relative;
 
-         @include mobile_s {
-            font-size: 2rem;
-            margin-bottom: 0;
-         }
+//          @include mobile_s {
+//             font-size: 2rem;
+//             margin-bottom: 0;
+//          }
 
-         @include mobile_m {
-            font-size: 2rem;
-            margin-bottom: 0;
-         }
+//          @include mobile_m {
+//             font-size: 2rem;
+//             margin-bottom: 0;
+//          }
 
-         @include mobile_l {
-            font-size: 2rem;
-            margin-bottom: 0;
-         }
-      }
+//          @include mobile_l {
+//             font-size: 2rem;
+//             margin-bottom: 0;
+//          }
+//       }
 
-      .detail {
-         background: url('../../../images/jpg/details01-desktop.png') no-repeat;
-         height: 1rem;
-         width: 168px;
+//       .detail {
+//          background: url('../../../images/jpg/details01-desktop.png') no-repeat;
+//          height: 1rem;
+//          width: 168px;
 
-         @include mobile_s {
-            display: none;
-         }
+//          @include mobile_s {
+//             display: none;
+//          }
 
-         @include mobile_m {
-            display: none;
-         }
+//          @include mobile_m {
+//             display: none;
+//          }
 
-         @include mobile_l {
-            display: none;
-         }
-      }
-   }
+//          @include mobile_l {
+//             display: none;
+//          }
+//       }
+//    }
 
-   .box-skills {
-      margin-top: 2.5rem;
+//    .box-skills {
+//       margin-top: 2.5rem;
 
-      .skills {
-         width: 100%;
-         display: flex;
-         flex-flow: row nowrap;
-         justify-content: center;
-         gap: 1.25rem;
+//       .skills {
+//          width: 100%;
+//          display: flex;
+//          flex-flow: row nowrap;
+//          justify-content: center;
+//          gap: 1.25rem;
 
-         @include mobile_s {
-            width: 300%;
-            gap: 1rem;
-         }
-      }
+//          @include mobile_s {
+//             width: 300%;
+//             gap: 1rem;
+//          }
+//       }
 
-      @include mobile_s {
-         margin-top: 1.25rem;
-         overflow: auto;
-         padding: 0 15px;
-      }
+//       @include mobile_s {
+//          margin-top: 1.25rem;
+//          overflow: auto;
+//          padding: 0 15px;
+//       }
 
-      @include mobile_m {
-         margin-top: 1.25rem;
-         overflow: auto;
-         padding: 0 15px;
-      }
+//       @include mobile_m {
+//          margin-top: 1.25rem;
+//          overflow: auto;
+//          padding: 0 15px;
+//       }
 
-      @include mobile_l {
-         margin-top: 1.25rem;
-         overflow: auto;
-         padding: 0 15px;
-      }
+//       @include mobile_l {
+//          margin-top: 1.25rem;
+//          overflow: auto;
+//          padding: 0 15px;
+//       }
 
-      .card {
-         width: 160px;
-         height: 160px;
-         border-radius: 0.3125rem;
-         border: 0.0625rem solid $color_title_sec;
+//       .card {
+//          width: 160px;
+//          height: 160px;
+//          border-radius: 0.3125rem;
+//          border: 0.0625rem solid $color_title_sec;
 
-         &:nth-child(1) {
-            background: url('../../../images/webp/wordpress.webp') no-repeat
-               center;
-            background-size: cover;
-         }
+//          &:nth-child(1) {
+//             background: url('../../../images/webp/wordpress.webp') no-repeat
+//                center;
+//             background-size: cover;
+//          }
 
-         &:nth-child(2) {
-            background: url('../../../images/webp/sass.webp') no-repeat center;
-            background-size: 100% 100%;
-         }
+//          &:nth-child(2) {
+//             background: url('../../../images/webp/sass.webp') no-repeat center;
+//             background-size: 100% 100%;
+//          }
 
-         &:nth-child(3) {
-            background: url('../../../images/webp/javascript.webp') no-repeat
-               center;
-            background-size: 100% 100%;
-         }
+//          &:nth-child(3) {
+//             background: url('../../../images/webp/javascript.webp') no-repeat
+//                center;
+//             background-size: 100% 100%;
+//          }
 
-         &:nth-child(4) {
-            background: url('../../../images/webp/stylus.webp') no-repeat center;
-            background-size: cover;
-         }
+//          &:nth-child(4) {
+//             background: url('../../../images/webp/stylus.webp') no-repeat center;
+//             background-size: cover;
+//          }
 
-         &:nth-child(5) {
-            background: url('../../../images/webp/figma.webp') no-repeat center;
-            background-size: cover;
-         }
+//          &:nth-child(5) {
+//             background: url('../../../images/webp/figma.webp') no-repeat center;
+//             background-size: cover;
+//          }
 
-         @include mobile_s {
-            width: calc(320px / 2);
-            // flex-shrink: 0;
-         }
+//          @include mobile_s {
+//             width: calc(320px / 2);
+//             // flex-shrink: 0;
+//          }
 
-         @include mobile_m {
-            width: calc(320px / 2);
-         }
+//          @include mobile_m {
+//             width: calc(320px / 2);
+//          }
 
-         @include mobile_l {
-            width: calc(320px / 2);
-         }
-      }
-   }
-}
+//          @include mobile_l {
+//             width: calc(320px / 2);
+//          }
+//       }
+//    }
+// }

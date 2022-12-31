@@ -1,71 +1,71 @@
-.footer {
-   background: $color_title_sec;
-   padding: 5rem 0;
-   text-align: center;
+// .footer {
+//    background: $color_title_sec;
+//    padding: 5rem 0;
+//    text-align: center;
 
-   @include mobile_s {
-      padding: 2rem 0;
-   }
+//    @include mobile_s {
+//       padding: 2rem 0;
+//    }
 
-   @include mobile_m {
-      padding: 2rem 0;
-   }
+//    @include mobile_m {
+//       padding: 2rem 0;
+//    }
 
-   @include mobile_l {
-      padding: 2rem 0;
-   }
+//    @include mobile_l {
+//       padding: 2rem 0;
+//    }
 
-   .img-footer {
-      width: fit-content;
-      margin: 0 auto;
-      svg {
-         width: 18.75rem;
+//    .img-footer {
+//       width: fit-content;
+//       margin: 0 auto;
+//       svg {
+//          width: 18.75rem;
 
-         @include mobile_s {
-            width: 100%;
-         }
+//          @include mobile_s {
+//             width: 100%;
+//          }
 
-         @include mobile_m {
-            width: 100%;
-         }
+//          @include mobile_m {
+//             width: 100%;
+//          }
 
-         @include mobile_l {
-            width: 100%;
-         }
-      }
+//          @include mobile_l {
+//             width: 100%;
+//          }
+//       }
 
-      @include mobile_s {
-         width: 100%;
-      }
+//       @include mobile_s {
+//          width: 100%;
+//       }
 
-      @include mobile_m {
-         width: 100%;
-      }
+//       @include mobile_m {
+//          width: 100%;
+//       }
 
-      @include mobile_l {
-         width: 100%;
-      }
-   }
+//       @include mobile_l {
+//          width: 100%;
+//       }
+//    }
 
-   span {
-      @include poppins(
-         $color: $color_text_third,
-         $lineHeight: normal,
-         $fontSize: 1.5rem,
-         $fontWeight: 400
-      );
-      text-align: center;
+//    span {
+//       @include poppins(
+//          $color: $color_text_third,
+//          $lineHeight: normal,
+//          $fontSize: 1.5rem,
+//          $fontWeight: 400
+//       );
+//       text-align: center;
 
-      @include mobile_s {
-         font-size: 0.75rem;
-      }
+//       @include mobile_s {
+//          font-size: 0.75rem;
+//       }
 
-      @include mobile_m {
-         font-size: 0.75rem;
-      }
+//       @include mobile_m {
+//          font-size: 0.75rem;
+//       }
 
-      @include mobile_l {
-         font-size: 0.75rem;
-      }
-   }
-}
+//       @include mobile_l {
+//          font-size: 0.75rem;
+//       }
+//    }
+// }

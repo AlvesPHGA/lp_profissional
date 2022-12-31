@@ -1,22 +1,27 @@
 // colors
-$c_topaz: #fec684;
-$c_white: #fff;
-$c_dark_gunmetal: #222033; // #1c1a2d
-$c_onix: #343245;
-$c_atomic_tangerine: #ff9b59;
-$c_caramel: #ffdf9d;
-$c_cadet_blue: #aaa8bb;
-$c_sinopia: #cc4b09;
-$c_eerie_black: #181625;
+$colors: (
+   'topaz': #fec684,
+   'white': #fff,
+   'dark_gunmetal': #222033,
+   'dark_gunmetal-two': #1c1a2d,
+   'onix': #343245,
+   'atomic_tangerine': #ff9b59,
+   'caramel': #ffdf9d,
+   'cadet_blue': #aaa8bb,
+   'sinopia': #cc4b09,
+   'eerie_black': #181625,
+);
 
 // measurements
-$meas: (
+$measurements: (
    // 4px
    'four': 0.25rem,
    // 8px
    'eight': 0.5rem,
    // 16px
    'sixteen': 1rem,
+   // 20px
+   'twenty': 1.25rem,
    // 32px
    'thirty-two': 2rem,
    // 64px
@@ -26,7 +31,7 @@ $meas: (
 );
 
 // Font size
-$f-size: (
+$font-size: (
    // 16px
    'sixteen': 1rem,
    // 20px
