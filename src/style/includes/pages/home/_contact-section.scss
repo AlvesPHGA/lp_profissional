@@ -1,158 +1,161 @@
-// .contact-section {
-//    padding: 5rem 0;
-//    background: $color_title_sec;
-//    position: relative;
+.contact {
+   padding: 5rem 0;
+   background: var(--color-dark_gunmetal);
+   position: relative;
 
-//    @include mobile_s {
-//       padding: 2rem 0;
-//    }
+   @include mobile_s {
+      padding: var(--meas-thirty-two) 0;
+   }
 
-//    @include mobile_m {
-//       padding: 2rem 0;
-//    }
+   @include mobile_m {
+      padding: var(--meas-thirty-two) 0;
+   }
 
-//    @include mobile_l {
-//       padding: 2rem 0;
-//    }
+   @include mobile_l {
+      padding: var(--meas-thirty-two) 0;
+   }
 
-//    .box-title {
-//       display: flex;
-//       align-items: center;
-//       gap: 2.5rem;
-//       justify-content: center;
+   .contact__title {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+      justify-content: center;
 
-//       .title {
-//          @include rubik($color: $color_title_prim, $fontSize: 3.5rem);
-//          text-align: center;
-//          position: relative;
-//          opacity: 0.7;
+      .title {
+         @include rubik(
+            $color: var(--color-atomic_tangerine),
+            $fontSize: 3.5rem
+         );
+         text-align: center;
+         position: relative;
+         opacity: 0.7;
 
-//          @include mobile_s {
-//             font-size: 2.5rem;
-//          }
+         @include mobile_s {
+            font-size: var(--fsize-fourty);
+         }
 
-//          @include mobile_m {
-//             font-size: 2.5rem;
-//          }
+         @include mobile_m {
+            font-size: var(--fsize-fourty);
+         }
 
-//          @include mobile_l {
-//             font-size: 2.5rem;
-//          }
+         @include mobile_l {
+            font-size: var(--fsize-fourty);
+         }
 
-//          &.anima-title {
-//             opacity: 1;
-//          }
-//       }
+         &.anima-title {
+            opacity: 1;
+         }
+      }
 
-//       .detail {
-//          background: url('../../../images/jpg/details01-desktop.png') no-repeat;
-//          height: 1rem;
-//          width: 168px;
+      .detail {
+         background: url('../../../images/jpg/details01-desktop.png') no-repeat;
+         height: var(--meas-sixteen);
+         width: 168px;
 
-//          @include mobile_s {
-//             display: none;
-//          }
+         @include mobile_s {
+            display: none;
+         }
 
-//          @include mobile_m {
-//             display: none;
-//          }
+         @include mobile_m {
+            display: none;
+         }
 
-//          @include mobile_l {
-//             display: none;
-//          }
-//       }
-//    }
+         @include mobile_l {
+            display: none;
+         }
+      }
+   }
 
-//    .contacts {
-//       display: flex;
-//       flex-direction: column;
-//       gap: 2rem;
-//       align-items: center;
-//       margin-top: 2.5rem;
+   .contact__info {
+      display: flex;
+      flex-direction: column;
+      gap: var(--meas-thirty-two);
+      align-items: center;
+      margin-top: 2.5rem;
 
-//       @include mobile_s {
-//          gap: 1.75rem;
-//          margin-top: 1rem;
-//       }
+      @include mobile_s {
+         gap: 1.75rem;
+         margin-top: var(--meas-sixteen);
+      }
 
-//       @include mobile_m {
-//          gap: 1rem;
-//          margin-top: 1rem;
-//       }
+      @include mobile_m {
+         gap: var(--meas-sixteen);
+         margin-top: var(--meas-sixteen);
+      }
 
-//       @include mobile_l {
-//          gap: 1rem;
-//          margin-top: 1rem;
-//       }
+      @include mobile_l {
+         gap: var(--meas-sixteen);
+         margin-top: var(--meas-sixteen);
+      }
 
-//       .contact {
-//          width: fit-content;
-//          display: flex;
-//          align-items: center;
-//          gap: 1.25rem;
-//          justify-content: center;
-//          transition: all 0.5s ease;
+      .contact__link {
+         width: fit-content;
+         display: flex;
+         align-items: center;
+         gap: var(--meas-twenty);
+         justify-content: center;
+         transition: all 0.5s ease;
 
-//          @include mobile_s {
-//             flex-direction: column;
-//             gap: 1rem;
-//          }
+         @include mobile_s {
+            flex-direction: column;
+            gap: var(--meas-sixteen);
+         }
 
-//          @include mobile_m {
-//             flex-direction: column;
-//          }
+         @include mobile_m {
+            flex-direction: column;
+         }
 
-//          @include mobile_l {
-//             flex-direction: column;
-//          }
+         @include mobile_l {
+            flex-direction: column;
+         }
 
-//          svg {
-//             @include mobile_s {
-//                width: 40px;
-//                height: 40px;
-//             }
+         svg {
+            @include mobile_s {
+               width: 40px;
+               height: 40px;
+            }
 
-//             @include mobile_m {
-//                padding: 2rem 0;
-//             }
+            @include mobile_m {
+               padding: var(--meas-thirty-two) 0;
+            }
 
-//             @include mobile_l {
-//                padding: 2rem 0;
-//             }
-//          }
+            @include mobile_l {
+               padding: var(--meas-thirty-two) 0;
+            }
+         }
 
-//          span {
-//             @include comfortaa(
-//                $color: $color_others_prim,
-//                $font-size: 3.25rem,
-//                $font-weight: normal
-//             );
-//             height: fit-content;
+         span {
+            @include comfortaa(
+               $color: var(--color-caramel),
+               $font-size: var(--fsize-fivety-two),
+               $font-weight: normal
+            );
+            height: fit-content;
 
-//             @include mobile_s {
-//                font-size: 1rem;
-//             }
+            @include mobile_s {
+               font-size: var(--fsize-sixteen);
+            }
 
-//             @include mobile_m {
-//                font-size: 1rem;
-//             }
+            @include mobile_m {
+               font-size: var(--fsize-sixteen);
+            }
 
-//             @include mobile_l {
-//                font-size: 1rem;
-//             }
-//          }
+            @include mobile_l {
+               font-size: var(--fsize-sixteen);
+            }
+         }
 
-//          &:hover {
-//             svg {
-//                path {
-//                   fill: $color_hover_prim;
-//                }
-//             }
+         &:hover {
+            svg {
+               path {
+                  fill: var(--color-sinopia);
+               }
+            }
 
-//             span {
-//                color: $color_hover_prim;
-//             }
-//          }
-//       }
-//    }
-// }
+            span {
+               color: var(--color-sinopia);
+            }
+         }
+      }
+   }
+}
