@@ -1,212 +1,114 @@
-// .work-section {
-//    padding: 5rem 0;
+.work {
+   padding: 5rem 0;
 
-//    @include mobile_s {
-//       padding: 2rem 0;
-//    }
+   @include mobile_s {
+      padding: var(--meas-thirty-two) 0;
+   }
 
-//    @include mobile_m {
-//       padding: 2rem 0;
-//    }
+   @include mobile_m {
+      padding: var(--meas-thirty-two) 0;
+   }
 
-//    @include mobile_l {
-//       padding: 2rem 0;
-//    }
+   @include mobile_l {
+      padding: var(--meas-thirty-two) 0;
+   }
 
-//    .box-title {
-//       display: flex;
-//       align-items: center;
-//       gap: 2.5rem;
-//       justify-content: center;
+   .work__title {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+      justify-content: center;
 
-//       .title {
-//          @include rubik($color: $color_title_sec, $fontSize: 3.75rem);
-//          text-align: center;
-//          position: relative;
-//          opacity: 0.7;
+      .title {
+         @include rubik($color: var(--color-dark_gunmetal), $fontSize: 3.75rem);
+         text-align: center;
+         position: relative;
+         opacity: 0.7;
 
-//          @include mobile_s {
-//             font-size: 2rem;
-//          }
+         @include mobile_s {
+            font-size: var(--meas-thirty-two);
+         }
 
-//          @include mobile_m {
-//             font-size: 2.75rem;
-//          }
+         @include mobile_m {
+            font-size: 2.75rem;
+         }
 
-//          @include mobile_l {
-//             font-size: 2.75rem;
-//          }
+         @include mobile_l {
+            font-size: 2.75rem;
+         }
 
-//          &.anima-title {
-//             opacity: 1;
-//          }
-//       }
+         &.anima-title {
+            opacity: 1;
+         }
+      }
 
-//       .detail {
-//          background: url('../../../images/jpg/details02-desktop.png') no-repeat;
-//          height: 1rem;
-//          width: 168px;
+      .detail {
+         background: url('../../../images/jpg/details02-desktop.png') no-repeat;
+         height: var(--meas-sixteen);
+         width: 168px;
 
-//          @include mobile_s {
-//             display: none;
-//          }
+         @include mobile_s {
+            display: none;
+         }
 
-//          @include mobile_m {
-//             display: none;
-//          }
+         @include mobile_m {
+            display: none;
+         }
 
-//          @include mobile_l {
-//             display: none;
-//          }
-//       }
-//    }
+         @include mobile_l {
+            display: none;
+         }
+      }
+   }
 
-//    .box-works {
-//       margin-top: 2.5rem;
-//       display: flex;
-//       justify-content: center;
+   .works__box {
+      margin-top: 2.5rem;
+      display: flex;
+      justify-content: center;
 
-//       overflow: hidden;
+      overflow: hidden;
 
-//       @include mobile_s {
-//          flex-direction: column;
-//          align-items: center;
-//          margin-top: 1.25rem;
-//       }
+      @include mobile_s {
+         flex-direction: column;
+         align-items: center;
+         margin-top: var(--meas-twenty);
+      }
 
-//       @include mobile_m {
-//          flex-direction: column;
-//          align-items: center;
-//          margin-top: 1.25rem;
-//       }
+      @include mobile_m {
+         flex-direction: column;
+         align-items: center;
+         margin-top: var(--meas-twenty);
+      }
 
-//       @include mobile_l {
-//          flex-direction: column;
-//          align-items: center;
-//          margin-top: 1.25rem;
-//       }
+      @include mobile_l {
+         flex-direction: column;
+         align-items: center;
+         margin-top: var(--meas-twenty);
+      }
 
-//       .work {
-//          display: flex;
-//          flex-direction: column;
-//          align-items: center;
-//          gap: 2.5rem;
-//          margin-top: 0.75rem;
+      .line {
+         height: 27.5rem;
+         width: 0.0625rem;
+         background: var(--color-cadet_blue);
+         margin: 0 1.75rem;
 
-//          position: relative;
-//          left: 200%;
-//          opacity: 0;
+         @include mobile_s {
+            width: 100%;
+            height: 0.0625rem;
+            margin: var(--meas-sixteen) 0;
+         }
 
-//          @include mobile_s {
-//             gap: 1.25rem;
-//          }
+         @include mobile_m {
+            width: 100%;
+            height: 0.0625rem;
+            margin: var(--meas-sixteen) 0;
+         }
 
-//          @include mobile_m {
-//             gap: 1.25rem;
-//          }
-
-//          @include mobile_l {
-//             gap: 1.25rem;
-//          }
-
-//          .card {
-//             width: 12.5rem;
-//             height: 12.5rem;
-//             border-radius: 0.3125rem;
-//             border: 0.0625rem solid $color_title_sec;
-//             display: flex;
-//             align-items: center;
-//             padding: 0 1.25rem;
-//             background: rgba($color: $color_title_sec, $alpha: 0.05);
-
-//             img {
-//                width: 100%;
-//             }
-
-//             @include mobile_s {
-//                width: calc(320px / 2);
-//                height: 160px;
-//             }
-
-//             @include mobile_m {
-//                width: calc(320px / 2);
-//                height: 160px;
-//             }
-
-//             @include mobile_l {
-//                width: calc(320px / 2);
-//                height: 160px;
-//             }
-//          }
-
-//          .text-content {
-//             text-align: center;
-//             width: 30rem;
-//             @include poppins(
-//                $color: $color_text_sec,
-//                $lineHeight: 1.875rem,
-//                $fontSize: 1.125rem,
-//                $fontWeight: 500
-//             );
-
-//             @include mobile_s {
-//                width: 100%;
-//                font-size: 1rem;
-//                line-height: 1.5rem;
-//             }
-
-//             @include mobile_m {
-//                width: 100%;
-//                font-size: 1rem;
-//                line-height: 1.5rem;
-//             }
-
-//             @include mobile_l {
-//                width: 100%;
-//                font-size: 1rem;
-//                line-height: 1.5rem;
-//             }
-//          }
-
-//          &.anima-card {
-//             animation: showCardLeft 0.3s forwards;
-//          }
-
-//          @keyframes showCardLeft {
-//             from {
-//                opacity: 0;
-//                left: 200%;
-//             }
-//             to {
-//                opacity: 1;
-//                left: 0;
-//             }
-//          }
-//       }
-
-//       .line {
-//          height: 27.5rem;
-//          width: 0.0625rem;
-//          background: $color_others_sec;
-//          margin: 0 1.75rem;
-
-//          @include mobile_s {
-//             width: 100%;
-//             height: 0.0625rem;
-//             margin: 1rem 0;
-//          }
-
-//          @include mobile_m {
-//             width: 100%;
-//             height: 0.0625rem;
-//             margin: 1rem 0;
-//          }
-
-//          @include mobile_l {
-//             width: 100%;
-//             height: 0.0625rem;
-//             margin: 1rem 0;
-//          }
-//       }
-//    }
-// }
+         @include mobile_l {
+            width: 100%;
+            height: 0.0625rem;
+            margin: var(--meas-sixteen) 0;
+         }
+      }
+   }
+}
