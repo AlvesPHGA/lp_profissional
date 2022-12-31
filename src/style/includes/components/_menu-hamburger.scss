@@ -1,6 +1,6 @@
 .menu__hamburger {
    width: 3rem;
-   height: 1.25rem;
+   height: var(--meas-twenty);
    position: relative;
    display: none;
 
@@ -16,11 +16,11 @@
       display: block;
    }
 
-   .slice {
+   .menu__slice {
       width: 100%;
-      height: 0.25rem;
+      height: var(--meas-four);
       background-color: var(--color-atomic_tangerine);
-      border-radius: 0.25rem;
+      border-radius: var(--meas-four);
 
       &::before {
          content: '';
@@ -28,9 +28,9 @@
          position: absolute;
          top: 50%;
          transform: translateY(-50%);
-         height: 0.25rem;
+         height: var(--meas-four);
          width: 100%;
-         border-radius: 0.25rem;
+         border-radius: var(--meas-four);
       }
 
       &::after {
@@ -38,9 +38,9 @@
          background-color: var(--color-atomic_tangerine);
          position: absolute;
          bottom: 0;
-         height: 0.25rem;
+         height: var(--meas-four);
          width: 100%;
-         border-radius: 0.25rem;
+         border-radius: var(--meas-four);
       }
 
       &.is--active__menu {
