@@ -5,6 +5,8 @@
    left: 200%;
    opacity: 0;
    cursor: pointer;
+   border-radius: 0.3125rem;
+   transition: all 0.58s ease;
 
    .card__img {
       height: 12.5rem;
@@ -47,6 +49,7 @@
       background: rgba($color: #181625, $alpha: 0.65);
       align-self: center;
       opacity: 0;
+      transition: all 0.6s ease;
 
       span {
          @include rubik($color: var(--color-caramel), $fontSize: 2rem);
@@ -58,27 +61,8 @@
       }
    }
 
-   .card__links {
-      width: 100%;
-      padding: var(--meas-eight) var(--meas-four);
-      display: flex;
-      justify-content: space-between;
-      text-transform: uppercase;
-
-      a {
-         @include comfortaa(
-            $color: var(--color-caramel),
-            $font-size: var(--fsize-sixteen),
-            $font-weight: 400
-         );
-
-         letter-spacing: 0.0625rem;
-         transition: color 0.7s ease;
-
-         &:hover {
-            color: var(--color-sinopia);
-         }
-      }
+   &:hover {
+      box-shadow: 5px 5px 10px rgba($color: #cc4b09, $alpha: 0.6);
    }
 
    &.anima-card {
