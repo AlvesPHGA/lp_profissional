@@ -46,10 +46,15 @@
       color: #fff;
       background: rgba($color: #181625, $alpha: 0.65);
       align-self: center;
+      opacity: 0;
 
       span {
          @include rubik($color: var(--color-caramel), $fontSize: 2rem);
          text-align: center;
+      }
+
+      &:hover {
+         opacity: 1;
       }
    }
 
