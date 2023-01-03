@@ -3,21 +3,25 @@ export default class Modal {
       this.elementDOM = document.querySelectorAll(elementDOM);
    }
 
-   openModal(element) {
+   actionModal(element) {
       const modal = document.querySelector('.modal');
 
-      modal.classList.add('is--active__modal');
+      modal.classList.toggle('is--active__modal');
       console.log(element.currentTarget);
    }
 
    handleClick() {
+      const close = document.querySelector('.modal__close');
+
       this.elementDOM.forEach((element) => {
-         element.addEventListener('click', this.openModal);
+         element.addEventListener('click', this.actionModal);
       });
+
+      close.addEventListener('click', this.actionModal);
    }
 
    eventBind() {
-      this.openModal = this.openModal.bind();
+      this.actionModal = this.actionModal.bind();
    }
 
    init() {
