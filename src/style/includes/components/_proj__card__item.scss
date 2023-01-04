@@ -16,15 +16,15 @@
       align-self: center;
 
       @include mobile_s {
-         width: 80%;
+         width: 100%;
       }
 
       @include mobile_m {
-         width: calc(100% / 2);
+         width: 100%;
       }
 
       @include mobile_l {
-         width: calc(100% / 2);
+         width: 100%;
       }
 
       img {
@@ -102,10 +102,6 @@
       }
    }
 
-   // &:hover {
-   //    box-shadow: 5px 5px 10px rgba($color: #cc4b09, $alpha: 0.6);
-   // }
-
    &.anima-card {
       animation: showCard 0.3s forwards;
    }
@@ -120,4 +116,16 @@
          left: 0;
       }
    }
+
+   // @include mobile_s {
+   //    width: calc(320px / 2);
+   // }
+
+   // @include mobile_m {
+   //    width: calc(320px / 2);
+   // }
+
+   // @include mobile_l {
+   //    width: calc(320px / 2);
+   // }
 }

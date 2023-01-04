@@ -981,17 +981,17 @@ a {
 }
 @media (max-width: 320px) {
   .card__item .card__img {
-    width: 80%;
+    width: 100%;
   }
 }
 @media (min-width: 321px) and (max-width: 375px) {
   .card__item .card__img {
-    width: 50%;
+    width: 100%;
   }
 }
 @media (min-width: 376px) and (max-width: 425px) {
   .card__item .card__img {
-    width: 50%;
+    width: 100%;
   }
 }
 .card__item .card__img img {
