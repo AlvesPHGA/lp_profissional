@@ -4,8 +4,25 @@ export default class Modal {
       this.closeModal = document.querySelector('.modal__close');
    }
 
+   getFetchData() {
+      const lcl = window.location.href;
+      fetch(`./projects-front-end.json`).then((res) =>
+         res.json().then((data) => console.log(data)),
+      );
+   }
+
    contentModal(element) {
-      element.path.forEach((el) => {});
+      const titleCard = element.srcElement.innerText;
+      const modal = document.querySelector('.modal__image');
+
+      modal.innerHTML = `<h1>${titleCard}</h1>`;
+
+      // if (titleCard === 'TODO') console.log(titleCard);
+      // if (titleCard === 'Motor Race') console.log(titleCard);
+   }
+
+   templateModal(item) {
+      console.log(item);
    }
 
    actionModal() {
@@ -31,6 +48,7 @@ export default class Modal {
 
    init() {
       this.eventBind();
+      this.getFetchData();
       this.handleClick();
       return this;
    }

@@ -8,15 +8,25 @@ section#projects.projects
          .cards
             #motor.card__item(data-scroll='card' data-modal="motorRace")
                .card__img: img(src="./assets/images/webp/motorRace.webp", alt="")
-               .card__title
+               .card__info.front-end
                   span Motor Race
+
+                  .card__links
+                     a(href="https://github.com/AlvesPHGA/motorRace", target="_blank") GitHub
+                     .card__border
+                     a(href="https://motor-race.vercel.app/", target="_blank") Link Site
 
             .card__detail
 
             #todo.card__item(data-scroll='card' data-modal="todo_app")
                .card__img: img(src="./assets/images/webp/todo.webp", alt="")
-               .card__title
+               .card__info.front-end
                   span TODO
+
+                  .card__links
+                     a(href="https://github.com/AlvesPHGA/app_todo", target="_blank") GitHub
+                     .card__border
+                     a(href="https://app-todo-ebon.vercel.app/", target="_blank") Link Site
 
          .border-detail
 
@@ -26,15 +36,15 @@ section#projects.projects
          .cards
             a(href="https://www.figma.com/community/file/1109469419158989381", target="_blank").card__item(data-scroll='card')
                .card__img: img(src="./assets/images/webp/layoutCiaPhotography.webp", alt="")
-               .card__title
+               .card__info
                   span Cia Photography
 
             a(href="https://www.figma.com/community/file/1129117355225362681", target="_blank").card__item(data-scroll='card')
                .card__img: img(src="./assets/images/webp/layoutMotorRace.webp", alt="")
-               .card__title
+               .card__info
                   span Motor Race
 
             a(href="https://www.figma.com/community/file/1167430365373386084", target="_blank").card__item(data-scroll='card')
                .card__img: img(src="./assets/images/webp/layoutPortfolio.webp", alt="")
-               .card__title
+               .card__info
                   span LP Portfolio
