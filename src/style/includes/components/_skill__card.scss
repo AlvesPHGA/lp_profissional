@@ -1,37 +1,26 @@
 .skill__card {
-   width: 160px;
-   height: 160px;
+   width: 10rem;
+   height: 10rem;
    border-radius: 0.3125rem;
    border: 0.0625rem solid var(--color-dark_gunmetal);
 
    &:nth-child(1) {
-      background: url('../../../images/webp/wordpress.webp') no-repeat center;
-      background-size: cover;
-   }
-
-   &:nth-child(2) {
       background: url('../../../images/webp/sass.webp') no-repeat center;
       background-size: 100% 100%;
    }
 
-   &:nth-child(3) {
+   &:nth-child(2) {
       background: url('../../../images/webp/javascript.webp') no-repeat center;
       background-size: 100% 100%;
    }
 
-   // &:nth-child(4) {
-   //    background: url('../../../images/webp/stylus.webp') no-repeat center;
-   //    background-size: cover;
-   // }
-
-   &:nth-child(4) {
+   &:nth-child(3) {
       background: url('../../../images/webp/figma.webp') no-repeat center;
       background-size: cover;
    }
 
    @include mobile_s {
       width: calc(320px / 2);
-      // flex-shrink: 0;
    }
 
    @include mobile_m {

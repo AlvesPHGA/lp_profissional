@@ -542,24 +542,20 @@ a {
 }
 
 .skill__card {
-  width: 160px;
-  height: 160px;
+  width: 10rem;
+  height: 10rem;
   border-radius: 0.3125rem;
   border: 0.0625rem solid var(--color-dark_gunmetal);
 }
 .skill__card:nth-child(1) {
-  background: url("../../../images/webp/wordpress.webp") no-repeat center;
-  background-size: cover;
-}
-.skill__card:nth-child(2) {
   background: url("../../../images/webp/sass.webp") no-repeat center;
   background-size: 100% 100%;
 }
-.skill__card:nth-child(3) {
+.skill__card:nth-child(2) {
   background: url("../../../images/webp/javascript.webp") no-repeat center;
   background-size: 100% 100%;
 }
-.skill__card:nth-child(4) {
+.skill__card:nth-child(3) {
   background: url("../../../images/webp/figma.webp") no-repeat center;
   background-size: cover;
 }
