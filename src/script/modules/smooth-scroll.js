@@ -3,11 +3,21 @@ export default class SmoothScroll {
       this.elementDom = document.querySelectorAll(elementDom);
    }
 
+   closeMenuMobile() {
+      const closeHamburger = document.querySelector('.menu__slice');
+      const menu = document.querySelector('.menu');
+
+      closeHamburger.classList.remove('is--active__menu');
+      menu.classList.remove('is--active__menu');
+   }
+
    clickEvent(element) {
       element.preventDefault();
 
       const sections = document.querySelectorAll('section');
       const dtSmooth = element.currentTarget.dataset.smooth;
+
+      this.closeMenuMobile();
 
       sections.forEach((sec) => {
          const id = sec.id;
