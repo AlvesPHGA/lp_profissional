@@ -78,6 +78,10 @@
             width: 140%;
             // gap: var(--meas-sixteen);
          }
+
+         @include mobile_m {
+            flex-wrap: wrap;
+         }
       }
 
       @include mobile_s {

@@ -12,6 +12,10 @@
    &:nth-child(2) {
       background: url('../../../images/webp/javascript.webp') no-repeat center;
       background-size: 100% 100%;
+
+      @include mobile_m {
+         background-size: cover;
+      }
    }
 
    &:nth-child(3) {
@@ -25,7 +29,8 @@
    }
 
    @include mobile_m {
-      width: calc(320px / 2);
+      width: 7.5rem;
+      height: 7.5rem;
    }
 
    @include mobile_l {
