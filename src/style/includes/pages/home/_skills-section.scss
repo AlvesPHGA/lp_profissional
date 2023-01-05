@@ -75,8 +75,8 @@
          gap: var(--meas-twenty);
 
          @include mobile_s {
-            width: 300%;
-            gap: var(--meas-sixteen);
+            width: 140%;
+            // gap: var(--meas-sixteen);
          }
       }
 
