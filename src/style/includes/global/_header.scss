@@ -129,6 +129,18 @@
                }
             }
          }
+
+         @include mobile_s {
+            margin-left: 0;
+         }
+
+         @include mobile_m {
+            margin-left: 0;
+         }
+
+         @include mobile_l {
+            margin-left: 0;
+         }
       }
 
       &.is--active__menu {
