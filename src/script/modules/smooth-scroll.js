@@ -24,7 +24,7 @@ export default class SmoothScroll {
 
          if (dtSmooth === id)
             sec.scrollIntoView({
-               block: 'center',
+               block: 'start',
                behavior: 'smooth',
             });
       });
