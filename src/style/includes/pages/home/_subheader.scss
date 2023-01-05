@@ -10,7 +10,7 @@
    @include mobile_s {
       margin-top: -7.5rem;
       padding-bottom: 1.5rem;
-      height: 27.75rem;
+      height: 28.75rem;
       background: url('../../../images/jpg/background-topo-mobile.jpg') center
          no-repeat;
    }
@@ -103,14 +103,17 @@
 
             @include mobile_s {
                font-size: 1.5rem;
+               line-height: 2.25rem;
             }
 
             @include mobile_m {
                font-size: 1.5rem;
+               line-height: 2.25rem;
             }
 
             @include mobile_l {
                font-size: 1.5rem;
+               line-height: 2.25rem;
             }
          }
       }
