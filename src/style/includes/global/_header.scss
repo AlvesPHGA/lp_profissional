@@ -10,7 +10,7 @@
    }
 
    @include mobile_m {
-      height: 112px;
+      height: 80px;
    }
 
    @include mobile_l {
@@ -21,6 +21,10 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+
+      @include mobile_m {
+         height: 100%;
+      }
    }
 
    &__logo {
@@ -30,7 +34,7 @@
 
       @include mobile_s {
          width: 70%;
-         height: 80%;
+         height: 100%;
 
          svg {
             width: 100%;
@@ -39,8 +43,8 @@
       }
 
       @include mobile_m {
-         width: 70%;
-         height: 80%;
+         width: 55%;
+         height: 100%;
 
          svg {
             width: 100%;
