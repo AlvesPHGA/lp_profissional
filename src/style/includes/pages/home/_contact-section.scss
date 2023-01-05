@@ -79,7 +79,8 @@
       }
 
       @include mobile_m {
-         gap: var(--meas-sixteen);
+         // gap: var(--meas-sixteen);
+         gap: 1.5rem;
          margin-top: var(--meas-sixteen);
       }
 
@@ -116,7 +117,8 @@
             }
 
             @include mobile_m {
-               padding: var(--meas-thirty-two) 0;
+               width: 40px;
+               height: 40px;
             }
 
             @include mobile_l {
