@@ -12,7 +12,7 @@
    }
 
    @include mobile_l {
-      padding: var(--meas-thirty-two) 0;
+      padding: var(--meas-twenty) 0;
    }
 
    &__img {
@@ -30,7 +30,7 @@
          }
 
          @include mobile_l {
-            width: 100%;
+            width: 70%;
          }
       }
 
