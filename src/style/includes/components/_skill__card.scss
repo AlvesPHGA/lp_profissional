@@ -34,6 +34,7 @@
    }
 
    @include mobile_l {
-      width: calc(320px / 2);
+      width: 7.5rem;
+      height: 7.5rem;
    }
 }

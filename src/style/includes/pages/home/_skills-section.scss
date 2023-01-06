@@ -12,7 +12,7 @@
    }
 
    @include mobile_l {
-      padding: var(--meas-thirty-two) 0;
+      padding: var(--meas-twenty) 0;
    }
 
    .skills__title {
@@ -30,17 +30,17 @@
          position: relative;
 
          @include mobile_s {
-            font-size: var(--meas-thirty-two);
+            font-size: var(--fsize-thirdy-two);
             margin-bottom: 0;
          }
 
          @include mobile_m {
-            font-size: var(--meas-thirty-two);
+            font-size: var(--fsize-thirdy-two);
             margin-bottom: 0;
          }
 
          @include mobile_l {
-            font-size: var(--meas-thirty-two);
+            font-size: var(--fsize-thirdy-two);
             margin-bottom: 0;
          }
       }
@@ -81,6 +81,10 @@
 
          @include mobile_m {
             flex-wrap: wrap;
+         }
+
+         @include mobile_l {
+            gap: var(--meas-sixteen);
          }
       }
 
