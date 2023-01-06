@@ -10,7 +10,7 @@
    }
 
    @include mobile_l {
-      padding: var(--meas-thirty-two) 0;
+      padding: var(--meas-twenty) 0 var(--meas-thirty-two);
    }
 
    .work__title {
