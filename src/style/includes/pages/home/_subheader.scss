@@ -26,6 +26,9 @@
    @include mobile_l {
       margin-top: -7.5rem;
       padding-bottom: 1.5rem;
+      height: 34rem;
+      background: url('../../../images/jpg/background-topo-mobile.jpg') center
+         no-repeat;
    }
 
    .__width-1200 {
@@ -60,16 +63,52 @@
          @include mobile_s {
             font-size: var(--fsize-thirdy-two);
             margin-bottom: var(--meas-twenty);
+            position: relative;
+
+            &::before {
+               position: absolute;
+               content: '';
+               background-color: var(--color-atomic_tangerine);
+               height: 0.1575rem;
+               width: 3rem;
+               top: 2.25rem;
+               left: 50%;
+               transform: translateX(-50%);
+            }
          }
 
          @include mobile_m {
             font-size: var(--fsize-thirdy-two);
             margin-bottom: var(--meas-twenty);
+            position: relative;
+
+            &::before {
+               position: absolute;
+               content: '';
+               background-color: var(--color-atomic_tangerine);
+               height: 0.1575rem;
+               width: 3rem;
+               top: 2.25rem;
+               left: 50%;
+               transform: translateX(-50%);
+            }
          }
 
          @include mobile_l {
             font-size: var(--fsize-thirdy-two);
             margin-bottom: var(--meas-twenty);
+            position: relative;
+
+            &::before {
+               position: absolute;
+               content: '';
+               background-color: var(--color-atomic_tangerine);
+               height: 0.1575rem;
+               width: 3rem;
+               top: 2.25rem;
+               left: 50%;
+               transform: translateX(-50%);
+            }
          }
       }
 
