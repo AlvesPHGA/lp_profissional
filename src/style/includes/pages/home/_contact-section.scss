@@ -39,7 +39,7 @@
          }
 
          @include mobile_l {
-            font-size: var(--fsize-fourty);
+            font-size: 2.75rem;
          }
 
          &.anima-title {
@@ -84,7 +84,7 @@
       }
 
       @include mobile_l {
-         gap: var(--meas-sixteen);
+         gap: var(--meas-twenty);
          margin-top: var(--meas-sixteen);
       }
 
@@ -121,7 +121,8 @@
             }
 
             @include mobile_l {
-               padding: var(--meas-thirty-two) 0;
+               width: 40px;
+               height: 40px;
             }
          }
 
