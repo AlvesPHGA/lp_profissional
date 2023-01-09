@@ -329,7 +329,7 @@ a {
 }
 
 .subheader {
-  background: url(../../cae9a506f6429a26e3ad.jpg) center no-repeat;
+  background: url(../images/back-topo-desktop.cae9a506.jpg) center no-repeat;
   height: 30.375rem;
   background-size: cover;
   margin-top: -132px;
@@ -342,7 +342,7 @@ a {
     margin-top: -7.5rem;
     padding-bottom: 1.5rem;
     height: 28.75rem;
-    background: url(../../77b1b15afca97b2fb5a0.jpg) center no-repeat;
+    background: url(../images/background-topo-mobile.77b1b15a.jpg) center no-repeat;
   }
 }
 @media (min-width: 321px) and (max-width: 375px) {
@@ -350,7 +350,7 @@ a {
     height: 34rem;
     margin-top: -6.5rem;
     padding-bottom: 1.5rem;
-    background: url(../../77b1b15afca97b2fb5a0.jpg) center no-repeat;
+    background: url(../images/background-topo-mobile.77b1b15a.jpg) center no-repeat;
   }
 }
 @media (min-width: 376px) and (max-width: 425px) {
@@ -358,7 +358,7 @@ a {
     margin-top: -7.5rem;
     padding-bottom: 1.5rem;
     height: 34rem;
-    background: url(../../77b1b15afca97b2fb5a0.jpg) center no-repeat;
+    background: url(../images/background-topo-mobile.77b1b15a.jpg) center no-repeat;
   }
 }
 .subheader .__width-1200 {
@@ -551,7 +551,7 @@ a {
   }
 }
 .skills__section .skills__title .detail {
-  background: url(../../1860ec054e3e0ff4d352.png) no-repeat;
+  background: url(../images/details01-desktop.1860ec05.png) no-repeat;
   height: var(--meas-sixteen);
   width: 168px;
 }
@@ -624,11 +624,11 @@ a {
   border: 0.0625rem solid var(--color-dark_gunmetal);
 }
 .skill__card:nth-child(1) {
-  background: url(../../15f13a83fe1c63f630a7.webp) no-repeat center;
+  background: url(../images/sass.15f13a83.webp) no-repeat center;
   background-size: 100% 100%;
 }
 .skill__card:nth-child(2) {
-  background: url(../../ed1c5230ebdd26ba2bdf.webp) no-repeat center;
+  background: url(../images/javascript.ed1c5230.webp) no-repeat center;
   background-size: 100% 100%;
 }
 @media (min-width: 321px) and (max-width: 375px) {
@@ -637,7 +637,7 @@ a {
   }
 }
 .skill__card:nth-child(3) {
-  background: url(../../9dd01eae9fef817a8931.webp) no-repeat center;
+  background: url(../images/figma.9dd01eae.webp) no-repeat center;
   background-size: cover;
 }
 @media (max-width: 320px) {
@@ -736,7 +736,7 @@ a {
   opacity: 1;
 }
 .work .work__title .detail {
-  background: url(../../092f721153a01ef2b6a8.png) no-repeat;
+  background: url(../images/details02-desktop.092f7211.png) no-repeat;
   height: var(--meas-sixteen);
   width: 168px;
 }
@@ -911,7 +911,7 @@ a {
 }
 
 .projects {
-  background: url(../../188c8fc8b65bb61c71f6.jpg) center no-repeat;
+  background: url(../images/back-proj-desktop.188c8fc8.jpg) center no-repeat;
   background-size: cover;
   border-bottom: solid 0.0625rem var(--color-atomic_tangerine);
   padding: 5rem 0;
@@ -1206,7 +1206,7 @@ a {
   opacity: 1;
 }
 .contact .contact__title .detail {
-  background: url(../../1860ec054e3e0ff4d352.png) no-repeat;
+  background: url(../images/details01-desktop.1860ec05.png) no-repeat;
   height: var(--meas-sixteen);
   width: 168px;
 }
