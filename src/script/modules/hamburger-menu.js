@@ -12,7 +12,7 @@ export default class MenuHamburger {
    }
 
    handleTouch() {
-      this.elementDOM.addEventListener('touchstart', this.actionMenu);
+      this.elementDOM.addEventListener('click', this.actionMenu);
    }
 
    eventBind() {
