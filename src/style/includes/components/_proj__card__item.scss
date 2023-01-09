@@ -8,6 +8,37 @@
    border-radius: 0.3125rem;
    transition: all 0.58s ease;
 
+   &:hover {
+      .card__info {
+         animation: showInfo 0.1s ease forwards, opacity 0.9s ease forwards;
+      }
+   }
+
+   &.is--active__card {
+      .card__info {
+         animation: showInfo 0.1s ease forwards, opacity 0.9s ease forwards;
+      }
+   }
+
+   @keyframes showInfo {
+      from {
+         bottom: -100%;
+      }
+      to {
+         bottom: 0;
+      }
+   }
+
+   @keyframes opacity {
+      from {
+         opacity: 0;
+      }
+
+      to {
+         opacity: 1;
+      }
+   }
+
    .card__img {
       height: 12.5rem;
       width: 100%;
@@ -40,7 +71,7 @@
       width: 100%;
       height: 100%;
       position: absolute;
-      top: 0;
+      bottom: -100%;
       left: 0;
       z-index: 1;
       display: flex;
@@ -58,10 +89,6 @@
       span {
          @include rubik($color: var(--color-caramel), $fontSize: 2rem);
          text-align: center;
-      }
-
-      &:hover {
-         opacity: 1;
       }
    }
 
