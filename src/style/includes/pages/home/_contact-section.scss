@@ -96,6 +96,14 @@
          justify-content: center;
          transition: all 0.5s ease;
 
+         &:last-child {
+            span {
+               @include mobile_s {
+                  font-size: 0.75rem;
+               }
+            }
+         }
+
          @include mobile_s {
             flex-direction: column;
             gap: var(--meas-sixteen);

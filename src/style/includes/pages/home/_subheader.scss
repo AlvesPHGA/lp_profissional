@@ -8,15 +8,15 @@
    // padding-bottom: 5rem;
 
    @include mobile_s {
-      margin-top: -7.5rem;
+      margin-top: -6.5rem;
       padding-bottom: 1.5rem;
-      height: 28.75rem;
+      height: 31.75rem;
       background: url('../../../images/jpg/background-topo-mobile.jpg') center
          no-repeat;
    }
 
    @include mobile_m {
-      height: 34rem;
+      height: 38rem;
       margin-top: -6.5rem;
       padding-bottom: 1.5rem;
       background: url('../../../images/jpg/background-topo-mobile.jpg') center
@@ -26,7 +26,7 @@
    @include mobile_l {
       margin-top: -7.5rem;
       padding-bottom: 1.5rem;
-      height: 34rem;
+      height: 38rem;
       background: url('../../../images/jpg/background-topo-mobile.jpg') center
          no-repeat;
    }
@@ -166,7 +166,7 @@
       }
    }
 
-   a {
+   .subheader__btn {
       width: fit-content;
       height: fit-content;
       display: block;
@@ -184,9 +184,20 @@
       );
 
       &:hover {
-         // color: transparent;
          background-color: var(--color-sinopia);
          border-color: var(--color-sinopia);
+      }
+
+      @include mobile_s {
+         margin-left: 0;
+      }
+
+      @include mobile_m {
+         margin-left: 0;
+      }
+
+      @include mobile_l {
+         margin-left: 0;
       }
    }
 }
